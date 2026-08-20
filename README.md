@@ -9,14 +9,6 @@ Repositorio público con los retos (actividades prácticas) de la materia **Prog
 
 ---
 
-## 📖 ¿Qué es un "reto"?
-
-En esta materia, un **reto** es una actividad de programación guiada y aplicada a ciberseguridad: cada uno parte de un problema concreto (auditoría de sistema, análisis de logs, manejo de errores, reconocimiento de red, etc.) y se resuelve escribiendo código real o resolviendo una máquina/plataforma en línea, siguiendo buenas prácticas de programación explicadas en clase.
-
-Los retos se van agregando conforme avanza el semestre — este repositorio crece semana a semana, no está completo desde el día uno.
-
----
-
 ## 🗂 Estructura del repositorio
 
 Un folder por fase del curso. Dentro de cada folder, todos los PDF de los retos de esa fase:
