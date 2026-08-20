@@ -1,6 +1,6 @@
 # Retos de Programación para Ciberseguridad — AD2026
 
-Repositorio público con los retos de código (actividades prácticas) de la materia **Programación para Ciberseguridad**, Facultad de Ciencias Físico Matemáticas, UANL.
+Repositorio público con los retos (actividades prácticas) de la materia **Programación para Ciberseguridad**, Facultad de Ciencias Físico Matemáticas, UANL.
 
 **Profesora:** Dra. Perla Marlene Viera González
 **Semestre:** Agosto–Diciembre 2026 (AD2026)
@@ -9,6 +9,13 @@ Repositorio público con los retos de código (actividades prácticas) de la mat
 
 ---
 
+## 📖 ¿Qué es un "reto"?
+
+En esta materia, un **reto** es una actividad de programación guiada y aplicada a ciberseguridad: cada uno parte de un problema concreto (auditoría de sistema, análisis de logs, manejo de errores, reconocimiento de red, etc.) y se resuelve escribiendo código real o resolviendo una máquina/plataforma en línea, siguiendo buenas prácticas de programación explicadas en clase.
+
+Los retos se van agregando conforme avanza el semestre — este repositorio crece semana a semana, no está completo desde el día uno.
+
+---
 
 ## 🗂 Estructura del repositorio
 
@@ -18,30 +25,65 @@ Un folder por fase del curso. Dentro de cada folder, todos los PDF de los retos 
 /
 ├── README.md
 ├── Fase-I-PowerShell/
-│   ├── Reto-03-funciones-auditoria.pdf
-│   └── ...
-├── Fase-II-.../
-│   ├── Reto-01-....pdf
-│   └── ...
+│   ├── R3_PC.pdf
+│   ├── R4_PC.pdf
+│   ├── Reto-05-excepciones-transcript.pdf
+│   ├── Reto-06-virtualbox-kali.pdf
+│   ├── Reto-07-inventarios-acl-eventid.pdf
+│   ├── Reto-08-csv-json-normalizacion.pdf
+│   ├── Reto-09-blue-team-cookbook.pdf
+│   └── Reto-10-tryhackme-windows-cmd.pdf
+├── Fase-II-Bash/
+│   ├── Reto-11-permisos-grep-awk-sed.pdf
+│   ├── Reto-12-tryhackme-linux-fundamentals-1.pdf
+│   ├── Reto-13-htb-meow.pdf
+│   ├── Reto-14-reconocimiento-red.pdf
+│   ├── Reto-15-tryhackme-linux-fundamentals-2.pdf
+│   ├── Reto-16-htb-fawn.pdf
+│   ├── Reto-17-tryhackme-linux-fundamentals-3.pdf
+│   ├── Reto-18-logs-a-json.pdf
+│   ├── Reto-19-classroom50-bash-autoevaluable.pdf
+│   └── Reto-20-htb-dancing.pdf
 └── ...
 ```
 
 - Cada PDF contiene el enunciado y la guía paso a paso del reto correspondiente.
 - Los archivos se nombran como `Reto-NN-nombre-corto.pdf`, en minúsculas y con guiones (sin espacios ni acentos), para que el orden numérico se mantenga visualmente en GitHub.
+- La numeración de retos es continua entre fases (no reinicia en 1 en cada fase) — así el número de reto identifica de forma única la actividad en todo el curso.
 
 ---
 
-## 📋 Retos publicados — Fase I (PowerShell)
+## 📋 Retos — Fase I: PowerShell (Semanas 1–4)
 
 | # | Reto | Tema | Estado |
 |---|------|------|--------|
 | 03 | Funciones de auditoría con parámetros | `function`, `param()`, `Parameter[]`, buenas prácticas de nomenclatura | ✅ Publicado |
-| 04 | Módulo con manifiesto | `.psm1`, `.psd1`, `New-ModuleManifest`, `Import-Module` | 🔜 Próximamente |
-| 05 | Módulos de PowerShell Gallery + `-ErrorAction` | `Find-Module`, `Install-Module`, PSScriptAnalyzer, `$Error` | 🔜 Próximamente |
-| 06 | Excepciones con `try` / `catch` / `finally` | Manejo de errores robusto, `throw` | 🔜 Próximamente |
-| 07 | Script integrador con Transcript | `Start-Transcript`, cierre de Fase I | 🔜 Próximamente |
+| 04 | Módulos propios y módulos de la Gallery | `.psm1`, `.psd1`, `New-ModuleManifest`, PowerShell Gallery | ✅ Publicado |
+| 05 | Excepciones y script de cierre con Transcript | `try`/`catch`/`finally`, `throw`, `Start-Transcript` | ✅ Publicado |
+| 06 | Tu primer laboratorio: VirtualBox y Kali Linux | Hipervisores, máquinas virtuales, snapshots | ✅ Publicado |
+| 07 | Inventarios, ACLs/GPO y Event IDs | `Get-CimInstance`, `Get-Acl`, `gpresult`, `Get-WinEvent` | ✅ Publicado |
+| 08 | Exportación a CSV/JSON y Normalización de datos | `Export-Csv`, `ConvertTo-Json` | ✅ Publicado |
+| 09 | Tu propio Blue Team Cookbook | Módulo defensivo integrador (cierre de Fase I) | ✅ Publicado |
+| 10 | TryHackMe — Windows Command Line | Reconocimiento de sistema vía CMD | ✅ Publicado |
 
-> La numeración de esta tabla es una referencia inicial — ajústala si ya llevas un control distinto (por ejemplo, si el reto de funciones lo manejas internamente como otro número). Ve actualizando esta tabla cada vez que subas un reto nuevo.
+> Los retos 01–03 corresponden a las primeras semanas de la fase (fundamentos de shell, primeros scripts, funciones) — sus PDFs se agregan conforme se formalicen en este formato.
+
+## 📋 Retos — Fase II: Bash, Administración y Forense en Linux (Semanas 5–7)
+
+| # | Reto | Plataforma | Estado |
+|---|------|------------|--------|
+| 11 | Auditoría de permisos + pipeline `grep`\|`awk`\|`sed` | Guiado, en clase | 🔜 Planeado |
+| 12 | *Linux Fundamentals Part 1* | TryHackMe | 🔜 Planeado |
+| 13 | **Meow** (Tier 0) | HTB Starting Point | 🔜 Planeado |
+| 14 | Reconocimiento de red (`ss`/`tcpdump`/`ip`) | Guiado, en clase | 🔜 Planeado |
+| 15 | *Linux Fundamentals Part 2* | TryHackMe | 🔜 Planeado |
+| 16 | **Fawn** (Tier 0) | HTB Starting Point | 🔜 Planeado |
+| 17 | *Linux Fundamentals Part 3* | TryHackMe | 🔜 Planeado |
+| 18 | Script integrador: `auth.log` → JSON (cierre de fase) | Guiado, en clase | 🔜 Planeado |
+| 19 | Reto de scripting Bash con pruebas automáticas | Classroom 50 | 🔜 Planeado |
+| 20 | **Dancing** (Tier 0) | HTB Starting Point | 🔜 Planeado |
+
+> Los checkpoints teóricos de Fase II (Kahoots en vivo, HTB Academy) **no** se consideran retos y no se documentan en este repositorio — se evalúan por otro medio.
 
 ---
 
@@ -51,6 +93,7 @@ Un folder por fase del curso. Dentro de cada folder, todos los PDF de los retos 
 2. Descarga o abre el PDF del reto que te fue asignado.
 3. Sigue la guía paso a paso dentro del propio documento.
 4. Ejecuta el código resultante en tu propio entorno de práctica (máquina virtual o entorno aislado autorizado) — nunca en sistemas de producción o de terceros sin autorización.
+5. Si el reto es una máquina de TryHackMe o Hack The Box, conéctate únicamente a través de la VPN oficial de la plataforma — nunca ataques hosts fuera del laboratorio designado.
 
 ---
 
