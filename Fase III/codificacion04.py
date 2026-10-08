@@ -1,6 +1,7 @@
 from urllib.parse import quote, unquote
 
-url_raw = "https://ejemplo.com/buscar?q=contraseña&usuario=héroe"
+url_raw = "https://ejemplo.com/buscar?" +\
+    "q=contraseña&usuario=héroe"
 
 codif   = quote(url_raw, safe=':/?&=')
 decodif = unquote(codif)
