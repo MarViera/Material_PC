@@ -9,6 +9,6 @@ mensaje    = b"Datos confidenciales del objetivo"
 cifrado    = f.encrypt(mensaje)
 descifrado = f.decrypt(cifrado)
 
-print(f"Clave      : {clave[:30]}...")
-print(f"Cifrado    : {cifrado[:40]}...")
+print(f"Clave      : {clave}...")
+print(f"Cifrado    : {cifrado}...")
 print(f"Descifrado : {descifrado}")
