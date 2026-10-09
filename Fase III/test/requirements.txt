@@ -1,0 +1,4 @@
+Pillow==9.0.1
+PyPDF2==1.26.0
+reportlab==3.6.8
+requests==2.27.1
