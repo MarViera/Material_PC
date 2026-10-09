@@ -1,6 +1,6 @@
 import base64
 
-dato = b"payload secreto"
+dato = b"payload secreto" #bytes
 
 hex_ = dato.hex()
 b32  = base64.b32encode(dato)
