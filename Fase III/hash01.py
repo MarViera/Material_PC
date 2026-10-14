@@ -1,6 +1,6 @@
 import hashlib
 
-dato = "mi_contraseña_segura"
+dato = "mi_contrasena_segura"
 
 md5    = hashlib.md5(dato.encode()).hexdigest()
 sha1   = hashlib.sha1(dato.encode()).hexdigest()

@@ -3,7 +3,7 @@ Step Twp Verify a baseline hash list against a target folder
 December 2018, Python Forensics
 
 '''
-
+#-b base.pickle -p "C:\Windows\System32\drivers" -t temp2.txt
 ''' LIBRARY IMPORT SECTION '''
 
 import subprocess       # subprocess library

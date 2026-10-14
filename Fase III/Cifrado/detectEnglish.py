@@ -8,11 +8,13 @@
 # words in it, one word per line. You can download this from
 # https://invpy.com/dictionary.txt)
 UPPERLETTERS = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ' 
-LETTERS_AND_SPACE = UPPERLETTERS + UPPERLETTERS.lower() + ' \t\n'
+LETTERS_AND_SPACE = UPPERLETTERS +\
+                    UPPERLETTERS.lower() + ' \t\n'
 
 def loadDictionary():
     #dictionaryFile = open('dictionary.txt')
-    dictionaryFile = open('dictEsp.txt',encoding='utf-8')
+    dictionaryFile = open('dictEsp.txt',
+                          encoding='utf-8')
     englishWords = {}
     for word in dictionaryFile.read().split('\n'):
         word = word.upper()

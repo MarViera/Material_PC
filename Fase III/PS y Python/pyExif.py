@@ -111,8 +111,8 @@ def ExtractGPSDictionary(fileName):
                 #print(gpsDictionary)
 
 
-        basicExifData = [imageTimeStamp, cameraMake, cameraModel]    
-
+        basicExifData = [imageTimeStamp, cameraMake,
+                         cameraModel]
         return gpsDictionary, basicExifData
 
     else:

@@ -26,7 +26,7 @@ Collects the File Hashes on the target Computer
 
 # Parameter Definition Section
 param(  
-    [string]$TargetFolder="C:/Windows/System32/drivers/",
+    [string]$TargetFolder="C:\Windows\System32\drivers\",
     [string]$ResultFile="baseline.txt"
 )
 
