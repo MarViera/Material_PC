@@ -3,7 +3,7 @@ Step One Create a baseline hash list of target folder
 December 2018, Python Forensics
 
 '''
-#-b base.pickle -p "C:\Windows\System32\drivers" -t temp2.txt
+#-b base.pickle -p "C:\Windows\System32\drivers" -t temp.txt
 ''' LIBRARY IMPORT SECTION '''
 
 import subprocess       # subprocess library
