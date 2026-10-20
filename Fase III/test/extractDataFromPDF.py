@@ -5,6 +5,7 @@ import os
 
 def printMeta():
     ruta = input("Ruta de imágenes: ")
+    # "C:\Users\marle\OneDrive\Documentos\GitHub\Material_PC\Fase III\test\pdf"
     os.chdir(ruta)
     ruta = os.getcwd()
     for root, dirs, files in os.walk(".", topdown=False):
