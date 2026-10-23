@@ -8,7 +8,7 @@ try:
                       str(y).rjust(4)
         print(positionStr, end='')
         print ("\n")
-except KeyboardInterrupt:
+except KeyboardInterrupt: #crt+c
     print('\n')
     pyautogui.click(x=x, y =y, clicks = 1)
 

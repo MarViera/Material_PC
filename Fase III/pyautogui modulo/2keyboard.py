@@ -3,7 +3,7 @@ msg = input("Qué quieres escribir? ")
 subprocess.call(["cmd", "/c", "start", "/max",
                  'C:\\Windows\\System32\\notepad.exe'])
 time.sleep(2)
-pyautogui.click(100,100)
+pyautogui.click(2575,175)
 pyautogui.typewrite(msg)
 time.sleep(3)
 pyautogui.press('enter') 
@@ -14,7 +14,7 @@ pyautogui.keyDown('s')#g
 pyautogui.keyUp('s')#g
 pyautogui.keyUp('ctrl')
 time.sleep(2)
-pyautogui.typewrite('PC2_61EJ25.txt')
+pyautogui.typewrite('PC_61AD2026.txt')
 pyautogui.press('enter')
 #Las siguientes líneas son necesarias si queremos
 #sobrescribir un archivo existente
