@@ -58,7 +58,7 @@ def main() -> None:
 
     correo = sys.argv[1]
     api_key = getpass.getpass("Ingresa tu HIBP API key: ")
-    # ea29fedf3f714c549c6ac6da6b661bf1
+    # Para la api key ver el Teams
     verificar_correo(correo, api_key)
 
 
