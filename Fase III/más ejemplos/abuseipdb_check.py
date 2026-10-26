@@ -19,7 +19,7 @@ def obtener_api_key() -> str:
     key = os.environ.get("ABUSEIPDB_KEY", "")
     if not key:
         key = getpass.getpass("AbuseIPDB API key: ")
-        # 1351d01769557d0f4f0e59265e9b3b401a122bac5c33b6fcbf15ac6f7a1d7e55b5d53ff5f43a287c
+        # 1351d01769557d0f4f0e59265e9b3b401a122bac5c33b6fcbf15ac6f7a1d7e55b5d53ff5f43a287
     return key.strip()
 
 
