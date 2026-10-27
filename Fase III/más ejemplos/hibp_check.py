@@ -7,7 +7,7 @@ Uso:  python hibp_check.py usuario@ejemplo.com
 import sys
 import logging
 import getpass
-
+#ea29fedf3f714c549c6ac6da6b661bf1
 import requests
 
 # Configuración única de logging
@@ -28,7 +28,8 @@ def verificar_correo(correo: str, api_key: str) -> None:
     params = {"truncateResponse": "false"}
 
     try:
-        r = requests.get(url, headers=headers, params=params, timeout=10)
+        r = requests.get(url, headers=headers, params=params,
+                         timeout=10)
         r.raise_for_status()
 
         brechas = r.json()

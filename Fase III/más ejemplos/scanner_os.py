@@ -2,7 +2,7 @@
 scanner_os.py — Detección de sistema operativo con python-nmap
 Requiere privilegios de root para la detección de OS (-O).
 Instalar: pip install python-nmap
-Uso:  sudo python scanner_os.py -t 148.234.88.94
+Uso:  sudo python scanner_os.py -t 148.234.5.222
 """
 import nmap
 import argparse

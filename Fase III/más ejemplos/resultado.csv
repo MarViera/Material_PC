@@ -1,0 +1,6 @@
+host,puerto,estado
+148.234.5.222,78,filtered
+148.234.5.222,79,filtered
+148.234.5.222,80,open
+148.234.5.222,81,filtered
+148.234.5.222,82,filtered

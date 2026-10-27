@@ -2,7 +2,7 @@
 nmap_scan.py — Escaneo de rango de puertos con python-nmap + exportación CSV
 (Combina nmap_test.py y nmap_test2.py)
 Instalar: pip install python-nmap
-Uso:  python nmap_scan.py -t 192.168.1.100 -i 20 -f 25 -o resultado.csv
+Uso:  python nmap_scan.py -t 148.234.5.222 -i 78 -f 82 -o resultado.csv
 """
 import nmap
 import argparse
@@ -29,7 +29,9 @@ def escanear_rango(target: str, inicio: int, fin: int, archivo_csv: str) -> None
 
     # Guardar CSV
     with open(archivo_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["host", "puerto", "estado"])
+        writer = csv.DictWriter(f, fieldnames=["host",
+                                               "puerto",
+                                               "estado"])
         writer.writeheader()
         writer.writerows(filas)
 

@@ -1,7 +1,8 @@
 """
 nmap_info.py — Información detallada de un puerto con python-nmap
 Instalar: pip install python-nmap
-Uso:  python nmap_info.py -t 148.234.5.200 -p 80
+E instalar nmap: https://nmap.org/download.html#windows
+Uso:  python nmap_info.py -t 148.234.5.222 -p 80
 """
 import nmap
 import argparse
