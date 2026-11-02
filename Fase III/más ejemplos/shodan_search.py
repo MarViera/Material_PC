@@ -4,7 +4,7 @@ Combina shodan1.py (búsqueda) y shodan2.py (lookup por host).
 Sin llaves hardcodeadas: usa getpass o variable de entorno SHODAN_KEY
 Instalar: pip install shodan
 Uso:  python shodan_search.py -q "apache"          # búsqueda por keyword
-      python shodan_search.py --host 148.234.5.200  # lookup de un host
+      python shodan_search.py --host 8.8.8.8  # lookup de un host
 """
 import argparse
 import getpass
